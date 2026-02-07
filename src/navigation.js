@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink } from './utils/permalinks';
+import { getBlogPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -25,8 +25,13 @@ export const headerData = {
       // ],
     },
     {
-      text: 'Manual',
-      href: '/manual',
+      text: 'Campanhas',
+      links: [
+        {
+          text: 'A torre de marfim',
+          href: '/campanhas/a-torre-de-marfim',
+        },
+      ],
     },
     {
       text: 'Sobre os Personagens',
@@ -35,10 +40,10 @@ export const headerData = {
           text: 'Todos os personagens',
           href: getBlogPermalink(),
         },
-        {
-          text: 'Por player',
-          href: getPermalink('jean_meira', 'category'),
-        },
+        // {
+        //   text: 'Por player',
+        //   href: getPermalink('jean_meira', 'category'),
+        // },
       ],
     },
   ],

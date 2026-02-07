@@ -1,5 +1,5 @@
 ---
-import * as docs from '~/content/doc/docs.mdx';
+import * as docs from '~/content/doc/a-torre-de-marfim.mdx';
 import type { InferGetStaticPropsType, GetStaticPaths } from 'astro';
 
 import merge from 'lodash.merge';
@@ -20,7 +20,7 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 const { post } = Astro.props as Props;
 
 const metadata = merge({
-  title: 'Convenções do Beholders ',
+  title: 'A torre de marfim',
   description: '',
 }) as MetaData;
 ---
